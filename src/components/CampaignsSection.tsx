@@ -210,12 +210,12 @@ export const CampaignsSection: React.FC<CampaignsSectionProps> = ({
                     <ExternalLink className="w-4 h-4" />
                   </a>
 
-                  {/* Open in embedded modal for seamless in-app preview */}
+                  {/* Open in enhanced modal for seamless in-app preview */}
                   <button
                     onClick={() => onOpenModal(activeCampaign)}
-                    className="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-neutral-200 hover:text-white bg-neutral-800 hover:bg-neutral-700 border border-white/10 rounded transition-colors whitespace-nowrap"
+                    className="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-neutral-100 hover:text-white bg-neutral-800/90 hover:bg-neutral-800 border border-amber-400/30 hover:border-amber-400/60 rounded transition-colors whitespace-nowrap group shadow-sm"
                   >
-                    <FileText className="w-4 h-4 text-amber-400" />
+                    <FileText className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
                     <span>Visualizar no Site</span>
                   </button>
                 </div>
@@ -316,13 +316,11 @@ export const CampaignsSection: React.FC<CampaignsSectionProps> = ({
 
                   <div className="grid grid-cols-2 gap-2">
                     <button
-                      onClick={() => {
-                        onSelectSlug(camp.slug);
-                        window.scrollTo({ top: 350, behavior: 'smooth' });
-                      }}
-                      className="py-2 text-[11px] font-medium text-neutral-300 hover:text-white bg-neutral-800/80 hover:bg-neutral-800 rounded transition-colors"
+                      onClick={() => onOpenModal(camp)}
+                      className="py-2 text-[11px] font-medium text-neutral-200 hover:text-white bg-neutral-800/90 hover:bg-neutral-800 border border-white/10 hover:border-amber-400/40 rounded transition-colors flex items-center justify-center gap-1.5"
                     >
-                      Ver Detalhes
+                      <FileText className="w-3 h-3 text-amber-400" />
+                      <span>Visualizar</span>
                     </button>
                     <button
                       onClick={() => onOpenSimulation(camp)}

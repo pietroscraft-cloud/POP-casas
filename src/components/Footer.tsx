@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUp, ExternalLink, ShieldCheck } from 'lucide-react';
 import { CAMPAIGNS } from '../data/campaigns';
+import { Logo } from './Logo';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -13,9 +14,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
           {/* Brand Col */}
           <div className="md:col-span-4 space-y-4">
-            <span className="font-display text-2xl tracking-wider text-neutral-100 uppercase block">
-              POP CASAS
-            </span>
+            <Logo size="lg" showSubtitle={true} />
             <p className="text-xs text-neutral-400 font-light leading-relaxed max-w-sm">
               Desenvolvimento imobiliário com foco em arquitetura autoral, valorização patrimonial e transparência em todas as etapas da sua aquisição.
             </p>

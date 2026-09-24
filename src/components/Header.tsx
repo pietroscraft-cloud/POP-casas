@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Logo } from './Logo';
 
 interface HeaderProps {
   onOpenQuickContact?: () => void;
@@ -26,12 +27,9 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuickContact }) => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        {/* Zone 1: Single text element wordmark */}
-        <a
-          href="#"
-          className="font-display text-2xl md:text-3xl tracking-wider text-neutral-100 hover:text-amber-300 transition-colors uppercase"
-        >
-          POP CASAS
+        {/* Zone 1: Distinctive Logo Brand */}
+        <a href="#" className="flex items-center">
+          <Logo size="md" showSubtitle={true} />
         </a>
 
         {/* Zone 2: 4-6 clean text navigation links */}

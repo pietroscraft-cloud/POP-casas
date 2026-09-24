@@ -74,6 +74,10 @@ export default function App() {
       <CampaignModal
         campaign={modalCampaign}
         onClose={() => setModalCampaign(null)}
+        onSelectCampaign={(camp) => {
+          setSelectedSlug(camp.slug);
+          setSimulationCampaign(camp);
+        }}
       />
 
       {/* Quick WhatsApp / Direct Consultant Contact Modal */}
