@@ -1,0 +1,7 @@
+{
+  "name": "Imóveis Exclusivos SP | Mooca, Tatuapé e Vila Ema",
+  "description": "Landing page de alta conversão para lançamentos imobiliários premium na Mooca, Tatuapé e Vila Ema em São Paulo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
